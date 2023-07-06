@@ -1,0 +1,3547 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    *
+    {
+        padding: 0%;
+        margin:0%;
+    }
+    body
+    {
+        background:black;
+    }
+    #cointainer
+    {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin:0 auto;
+        width:98%;
+        height:100%;
+        background: white;
+        border:;
+    }
+    #text
+    {
+        
+        text-align: center;
+        vertical-align:middle;
+        justify-content: center;
+        width:100%;
+        height:15%;
+        background: black;        
+    }
+    #h1
+    {
+        vertical-align:middle;
+        line-height: 70px;
+        color:white;
+        font-style: normal;
+        font-weight: bolder;
+        letter-spacing: 2px;
+    }
+    b{
+        color:red;
+    }
+    #Form
+    {
+        width:100%;
+        height: 70%;
+        vertical-align: middle;
+        padding-top:5px;
+        background-color: blanchedalmond;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    label
+    {
+        width:100%;
+        height: 20%;
+        margin-top:;
+        margin-bottom:;
+        margin-left:;
+        color:blue;
+        font-weight:900;
+    }
+    h3{
+        margin-top:5px;
+        margin-left: -18%;
+    }
+    
+    input
+    {
+        width:80%;
+        height:15%;
+        border-top-left-radius:20px;
+        border-bottom-left-radius:20px;
+        border:2px solid green;
+        margin:0 auto;
+        margin-top:0.5%;
+        font-weight: bolder;
+        font-size-adjust: inherit;
+        text-align: center;
+        margin-bottom:0.5%;
+        justify-content: center;
+        color:black;
+    }
+
+    
+    
+    input:hover
+    {
+        height:20%;
+    }
+    
+    
+    
+    #Age_Month,#Gender,#dropdown
+    {
+        width:17.5%;
+        height:15%;
+        text-align: center;
+        border-radius:;
+        border-top-right-radius:20px;
+        border-bottom-right-radius:20px;
+        color:black;
+        border:2px solid red;
+        text-align-last: center;
+        margin:;
+        margin-left: -1%;
+        margin-bottom:;
+        
+    }
+
+
+    option{
+        text-align: center;
+    }
+
+    #button
+    {
+        width:100%;
+        height:15%;
+        margin-bottom: 0%;
+    }
+    button
+    {
+        color:red;
+        width:100%;
+        height:100%;
+
+        background:radial-gradient(black,blue);
+    }
+
+    button:hover
+    {
+        color:red;
+        box-shadow:0px 0px 10px white;
+        background:radial-gradient(black,blue);
+    }
+    #calculate{
+        color:yellow;
+    }
+
+    #result
+    {
+        width:100%;
+        height:7%;
+        vertical-align: middle;
+        color:red;
+        margin-top:2.5%;
+        text-align: center;
+    }
+    #status
+    {
+        width:100%;
+        height:7%;
+        
+        margin-top:0.5%;
+       
+        text-align: center;
+    }
+    #Extra_info
+    {
+        width:100%;
+        height:7%;
+        
+        margin-top:0.5%;
+        margin-bottom:2.5%;
+        text-align: center;
+    }
+
+    #downbox
+    {
+        width:100%;
+        height:15%;
+        border:;
+        position: relative;
+        justify-content: center;
+        text-align: center;
+        background: black;
+        color:white;        
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #downbox1
+    {
+        width:100%;
+        height:auto;
+        border:;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        position: relative;
+        justify-content: center;
+        text-align: center;
+        background:black;
+        color:blue;        
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #name
+    {
+        text-align: center;
+        justify-content: center;
+        vertical-align: middle;
+        margin:0 auto;
+        line-height:90px;
+        background: linear-gradient(to right,red,green,white,orange,blue);
+        -webkit-text-fill-color:transparent;
+        -webkit-background-clip: text;
+        width:;
+    }
+
+    #result_text
+    {
+        text-align: center;
+        justify-content: center;
+        vertical-align: middle;
+        margin:0 auto;
+        line-height:90px
+    }
+    #Weight_Range
+    {
+        color:white;
+        
+        vertical-align: middle;
+        line-height: 80px;
+        background-color: black;
+    }
+    </style>
+</head>
+<body>
+    <div id="cointainer">
+        <div id="text">
+            <h1 id="h1"><b>B</b>ody <b>M</b>ass <b>I</b>ndex</h1>
+        </div>
+
+        <div id="Form">
+            <form>
+                <label><h3>Age</h3></label>
+                <input type="number" name="age" id="Age" placeholder="Enter Age">
+                                  
+
+                <select  name="Age_Month" id="Age_Month">
+                
+                    <option value="Year">Year</option>
+                    <option value="Month">Month</option>
+                
+                </select>
+                    
+                
+                <label><h3>Weight(in kg)</h3></label>
+                <input type="number" name="weight" id="weight" placeholder="Enter weight in Kg">
+               
+                <select  name="Gender" id="Gender">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    </select>
+                   
+
+                <label><h3>Height</h3></label>
+                <input type="number" name="height" id="height" placeholder="Height">
+                <select name="dropdown" id="dropdown">
+                    <option value="feet">Feet</option>
+                    <option value="centi-meter">CM</option>
+                    <option value="inch">Inch</option>
+                    <option value="meter">Meter</option>
+                </select>
+            </form>
+        </div>
+        <div id="button">
+            <button id="button1" onclick="calculate()"><h1 id="Calculate">Calculate</h1></button>
+        </div>
+        <div id="downbox1">
+            <h4 id="Weight_Range"></h4>
+        </div>  
+        <div id="downbox">
+              <h2 id="name">Created by Harsh</h2>  
+
+                <h2 id="result_text"></h2>
+        </div>
+      
+
+    </div>
+
+    <script>
+        
+        
+        show();
+        
+        function calculate()
+        {
+            
+            var Weight=document.getElementById('weight').value;
+            var height=document.getElementById('height').value;
+            var height_in=document.getElementById('dropdown').value;
+            var Height=convertor(height_in,height);
+            var Age=document.getElementById('Age').value;
+            var Gender=document.getElementById('Gender').value;
+            var Age_Month=document.getElementById('Age_Month').value;
+            
+            
+            var BMI=Weight/(Height*0.305*Height*0.305);
+            BMI=parseFloat(BMI).toFixed(2);
+            
+            var message_Weight_Age=computeResult(Weight,Age,Height,BMI,Gender,Age_Month);
+            
+            var message_Height_Weight=computeResult1(Weight,Height,Gender,BMI);
+            
+           TextRemove();
+
+                if(Height<4.6)
+                {
+                    if(message_Weight_Age=='Healthy')
+                    {
+                        alert('Healthy');
+                        document.getElementById('result_text').innerHTML="<h1><font color=green>Healthy</font></h1>";
+                    }
+                    else if(message_Weight_Age=='Over Weight')
+                    {
+                        alert('Over Weight');
+                        document.getElementById('result_text').innerHTML="<h1><font color=yellow>Over Weight By Height</font></h1>";
+                    }
+                    else if(message_Weight_Age=='Under Weight')
+                    {
+                        alert('Under Weight');
+                        document.getElementById('result_text').innerHTML="<h1><font color=red>Under Weight By Height</font></h1>";
+                    }
+
+                }
+                else if(Height>7.0)
+                {
+                    if(message_Height_Weight=='Healthy')
+                    {
+                        alert('Healthy');
+                        document.getElementById('result_text').innerHTML="<h1><font color=green>Healthy</font></h1>";
+                    }
+                    else if(message_Height_Weight=='Over Weight')
+                    {
+                        alert('Over Weight');
+                        document.getElementById('result_text').innerHTML="<h1><font color=yellow>Over Weight By Height</font></h1>";
+                    }
+                    else if(message_Height_Weight=='Under Weight')
+                    {
+                        alert('Under Weight');
+                        document.getElementById('result_text').innerHTML="<h1><font color=red>Under Weight By Height</font></h1>";
+                    }
+
+                }
+
+                else
+                {
+
+                    if(message_Weight_Age=='Healthy' && message_Height_Weight=='Healthy')
+                    {
+                        alert('Healthy');
+                        document.getElementById('result_text').innerHTML="<h1><font color=green>Healthy</font></h1>";
+
+                    }
+                    else if(message_Weight_Age=='Under Weight' && message_Height_Weight=='Healthy')
+                    {
+                        alert('Under weight');
+                        document.getElementById('result_text').innerHTML="<h1><font color=red>Under Weight By Age</font></h1>";
+                        
+                    }
+                    else if(message_Weight_Age=='Over Weight' && message_Height_Weight=='Healthy')
+                    {
+                        alert('Healthy');
+                        document.getElementById('result_text').innerHTML="<h1><font color=green>Healthy</font></h1>";
+
+                    }
+                    if(message_Weight_Age=='Healthy' && message_Height_Weight=='Over Weight')
+                    {
+                        alert('Over Weight');
+                        document.getElementById('result_text').innerHTML="<h1><font color=yellow>Over Weight By Height</font></h1>";
+                    }
+                    else if(message_Weight_Age=='Healthy' && message_Height_Weight=='Under Weight')
+                    {
+                        alert('Under weight');
+                        document.getElementById('result_text').innerHTML="<h1><font color=red>Under Weight By Height</font></h1>";
+                    }
+                    else if(message_Weight_Age=='Under Weight' && message_Height_Weight=='Under Weight')
+                    {
+                        alert('Under Weight');
+                        document.getElementById('result_text').innerHTML="<h1><font color=red>Under Weight</font></h1>";
+                    }
+                    else if(message_Weight_Age=='Over Weight' && message_Height_Weight=='Over Weight')
+                    {
+                        alert('Over Weight');
+                        document.getElementById('result_text').innerHTML="<h1><font color=yellow>Over Weight</font></h1>";
+                    }
+                    
+                    else if(message_Weight_Age=='Under Weight' && message_Height_Weight=='Over Weight')
+                    {
+                        alert('Over Weight');
+                        document.getElementById('result_text').innerHTML="<h1><font color=yellow>Over Weight By Height</font></h1>";
+                    }
+                    
+                    else if(message_Weight_Age=='Over Weight' && message_Height_Weight=='Under Weight')
+                    {
+                        alert('Under Weight');
+                        document.getElementById('result_text').innerHTML="<h1><font color=red>Under Weight By Height</font></h1>";
+                    }
+                }
+
+            
+        }
+
+        function convertor(height_in,height)
+        {
+            
+            if(height_in === 'centi-meter')
+            {
+                let real_height;
+                real_height=height*0.0328084;
+                return real_height;
+            }
+            else if(height_in === 'inch')
+            {
+                let real_height;
+                real_height=height*0.0833;
+                return real_height;
+            }
+            else if(height_in === 'feet')
+            {
+               
+                let real_height=height;
+                return real_height;
+            }
+            else if(height_in === 'meter')
+            {
+                let real_height;
+                real_height=height*0.0328084*100;
+                return real_height;
+            }
+            
+                
+        }
+
+        
+        function computeResult(Weight,Age,Height,BMI,Gender,Age_Month)
+        {
+            
+                    if(Gender=='Male')
+                    {   
+                        if(Age_Month=='Month')
+                            {                       
+                                    if(Age==0)
+                                    {
+                                                if(Weight>=2.5 && Weight<=4.3)
+                                                { 
+                                                    document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 2.5-4.5 (kg)</h1>";
+
+                                                return 'Healthy';
+                                  
+                                                }
+                                                else if(Weight<2.5)
+                                                {
+                                                    document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 2.5-4.5 (kg)</h1>";
+      
+                                                    return 'Under Weight';
+                                                    
+                                                }
+                                                else if(Weight>4.3)
+                                                {
+                                                    document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 2.5-4.5 (kg)</h1>";
+                                                    
+                                                    return 'Over Weight';                                    
+                                                    
+                                                }
+                                                
+                                    }
+                                    
+                                    else if(Age==1)
+                                    {
+                                                if(Weight>=3.4 && Weight<=5.7)
+                                                {
+                                                    document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 3.4-5.7 (kg)</h1>";
+                                                    
+                                                    return 'Healthy';
+                                                    
+                                                }
+                                                else if(Weight<3.4)
+                                                {
+                                                    document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 3.4-5.7 (kg)</h1>";
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>5.7)
+                                                {
+                                                    document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 3.4-5.7 (kg)</h1>";
+                                                    return 'Over Weight';
+                                                }
+                                                
+                                    }
+                                    
+                                    else if(Age==2)
+                                    {
+                                                if(Weight>=4.4 && Weight<=7.0)
+                                                {
+                                                    document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 4.4-7.0 (kg)</h1>";
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<4.4)
+                                                {
+                                                    document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 4.4-7.0 (kg)</h1>";
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>7.0)
+                                                {
+                                                    document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 4.4-7.0 (kg)</h1>";
+                                                    return 'Over Weight';
+                                                }
+                                    }
+                                
+                                    else if(Age==3)
+                                    {
+                                                if(Weight>=5.1 && Weight<=7.9)
+                                                {
+                                                    document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 5.1-7.9 (kg)</h1>";
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<5.1)
+                                                {
+                                                    document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 5.1-7.9 (kg)</h1>";
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>7.9)
+                                                {
+                                                    document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 5.1-7.9 (kg)</h1>";
+                                                    return 'Over Weight';
+                                                }
+                                    }
+                                    
+                                    else if(Age==4)
+                                    {
+                                                if(Weight>=5.6 && Weight<=8.6)
+                                                {
+                                                    document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 5.6-8.6 (kg)</h1>";
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<5.6)
+                                                {
+                                                    document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 5.6-8.6 (kg)</h1>";
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>8.6)
+                                                {
+                                                    document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 5.6-8.6 (kg)</h1>";
+                                                    return 'Over Weight';
+                                                }
+                                    }
+                                    
+                                    else if(Age==5)
+                                    {
+                                                if(Weight>=6.1 && Weight<=9.2)
+                                                {
+                                                    document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 6.1-9.2 (kg)</h1>";
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<6.1)
+                                                {
+                                                    document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 6.1-9.2 (kg)</h1>";
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>9.2)
+                                                {
+                                                    document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 6.1-9.2 (kg)</h1>";
+                                                    return 'Over Weight';
+                                                }
+                                    }
+                                    
+                                    else if(Age==6)
+                                    {
+                                        if(Weight>=6.4 && Weight<=9.7)
+                                                {
+                                                    document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 6.4-9.7 (kg)</h1>";
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<6.4)
+                                                {
+                                                    document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 6.4-9.7 (kg)</h1>";
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>9.7)
+                                                {
+                                                    document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 6.4-9.7 (kg)</h1>";
+                                                    return 'Over Weight';
+                                                }
+                                    }
+                                    
+                                    else if(Age==7)
+                                    {
+                                        if(Weight>=6.7 && Weight<=10.2)
+                                                {
+                                                    document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 6.7-10.2 (kg)</h1>";
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<6.7)
+                                                {
+                                                    document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 6.7-10.2 (kg)</h1>";
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>10.2)
+                                                {
+                                                    document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 6.7-10.2 (kg)</h1>";
+                                                    return 'Over Weight';
+                                                }
+                                    }
+                                
+                                    else if(Age==8)
+                                    {
+                                        if(Weight>=7.0 && Weight<=10.5)
+                                                {
+                                                    document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 7.0-10.5 (kg)</h1>";
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<7.0)
+                                                {
+                                                    document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 7.0-10.5 (kg)</h1>";
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>10.5)
+                                                {
+                                                    document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 7.0-10.5 (kg)</h1>";
+                                                    return 'Over Weight';
+                                                }
+                                    }
+                                    
+                                    else if(Age==9)
+                                    {
+                                        if(Weight>=7.2 && Weight<=10.9)
+                                                {
+                                                    document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 7.2-10.9 (kg)</h1>";
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<7.2)
+                                                {
+                                                    document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 7.2-10.9 (kg)</h1>";
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>10.9)
+                                                {
+                                                    document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 7.2-10.9 (kg)</h1>";
+                                                    return 'Over Weight';
+                                                }
+                                    }
+                                    
+                                    else if(Age==10)
+                                    {
+                                        if(Weight>=7.5 && Weight<=11.2)
+                                                {
+                                                    document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 7.5-11.2 (kg)</h1>";
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<7.5)
+                                                {
+                                                    document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 7.5-11.2 (kg)</h1>";
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>11.2)
+                                                {
+                                                    document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 7.5-11.2 (kg)</h1>";
+                                                    return 'Over Weight';
+                                                }
+                                    }
+                                    
+                                    else if(Age==11)
+                                    {
+                                        if(Weight>=7.4 && Weight<=11.5)
+                                                {
+                                                    document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 7.4-11.5 (kg)</h1>";
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<7.4)
+                                                {
+                                                    document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 7.4-11.5 (kg)</h1>";
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>11.5)
+                                                {
+                                                    document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 7.4-11.5 (kg)</h1>";
+                                                    return 'Over Weight';
+                                                }
+                                    }
+                                    
+                                    else if(Age==12)
+                                    {
+                                        if(Weight>=7.8 && Weight<=11.8)
+                                                {
+                                                    document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 7.8-11.8 (kg)</h1>";
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<7.8)
+                                                {
+                                                    document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 7.8-11.8 (kg)</h1>";
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>11.8)
+                                                {
+                                                    document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 7.8-11.8 (kg)</h1>";
+                                                    return 'Over Weight';
+                                                }
+                                    }
+                                    
+                                    
+                                else 
+                                {
+                                    alert('Select age in Year');
+                                    location.reload();
+                                } 
+                                
+
+                        }
+                        
+                        else if(Age_Month=='Year')
+                        {
+                            
+                            if(Age==0)
+                            {
+                                                if(Weight>=2.5 && Weight<=4.5)
+                                                {
+                                                    document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 2.5-4.5 (kg)</h1>"; 
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<2.5)
+                                                {
+                                                    document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 2.5-4.5 (kg)</h1>"; 
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>4.5)
+                                                {
+                                                    document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 2.5-4.5 (kg)</h1>"; 
+                                                    return 'Over Weight';                                    
+                                                }
+                                            
+                            }
+
+                            else if(Age==0.5)
+                            {
+                                document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 6.0-10 (kg)</h1>"; 
+                                if(Weight>=6 && Weight<=10)
+                                                { 
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<6)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>10)
+                                                {
+                                                    return 'Over Weight';                                    
+                                                }
+                            }
+
+                            else if(Age==1)
+                            {
+                                document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 7.5-12 (kg)</h1>"; 
+                                if(Weight>=7.5 && Weight<=12)
+                                                { 
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<7.5)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>12)
+                                                {
+                                                    return 'Over Weight';                                    
+                                                }
+                            }
+                            
+                            else if(Age==1.5)
+                            {
+                                document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 8.5-13.5 (kg)</h1>"; 
+                                if(Weight>=8.5 && Weight<=13.5)
+                                                { 
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<8.5)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>13.5)
+                                                {
+                                                    return 'Over Weight';                                    
+                                                }
+                            }
+                            else if(Age==2)
+                            {
+                                document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 9.5-15 (kg)</h1>"; 
+                                if(Weight>=9.5 && Weight<=15)
+                                                { 
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<9.5)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>15)
+                                                {
+                                                    return 'Over Weight';                                    
+                                                }
+                            }
+                            else if(Age==2.5)
+                            {
+                                document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 10.5-16.5 (kg)</h1>"; 
+                                if(Weight>=10.5 && Weight<=16.5)
+                                                { 
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<10.5)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>16.5)
+                                                {
+                                                    return 'Over Weight';                                    
+                                                }
+                            }
+                            else if(Age==3)
+                            {
+                                document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 11.5-18 (kg)</h1>"; 
+                                if(Weight>=11.5 && Weight<=18)
+                                                { 
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<11.5)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>18)
+                                                {
+                                                    return 'Over Weight';                                    
+                                                }
+                            }
+                            else if(Age==3.5)
+                            {
+                                document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 12-19 (kg)</h1>"; 
+                                if(Weight>=12 && Weight<=19)
+                                                { 
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<12)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>19)
+                                                {
+                                                    return 'Over Weight';                                    
+                                                }
+                            }
+                            else if(Age==4)
+                            {
+                                document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 12.5-21 (kg)</h1>"; 
+                                if(Weight>=12.5 && Weight<=21)
+                                                { 
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<12.5)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>21)
+                                                {
+                                                    return 'Over Weight';                                    
+                                                }
+                            }
+                            else if(Age==4.5)
+                            {
+                                document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 13-23 (kg)</h1>"; 
+                                if(Weight>=13 && Weight<=23)
+                                                { 
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<13)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>23)
+                                                {
+                                                    return 'Over Weight';                                    
+                                                }
+                            }
+                            else if(Age==5)
+                            {
+                                document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 13.5-24.5 (kg)</h1>"; 
+                                if(Weight>=13.5 && Weight<=24.5)
+                                                { 
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<13.5)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>24.5)
+                                                {
+                                                    return 'Over Weight';                                    
+                                                }
+                            }
+                            else if(Age==5.5)
+                            {   document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 14-26 (kg)</h1>"; 
+                                if(Weight>=14 && Weight<=26)
+                                                { 
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<14)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>26)
+                                                {
+                                                    return 'Over Weight';                                    
+                                                }
+                            }
+                            else if(Age==6)
+                            {
+                                document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 14.5-28 (kg)</h1>"; 
+                                if(Weight>=14.5 && Weight<=28)
+                                                { 
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<14.5)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>28)
+                                                {
+                                                    return 'Over Weight';                                    
+                                                }
+                            }
+                            else if(Age==6.5)
+                            {
+                                document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 15.5-31 (kg)</h1>"; 
+                                if(Weight>=15.5 && Weight<=31)
+                                                { 
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<15.5)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>31)
+                                                {
+                                                    return 'Over Weight';                                    
+                                                }
+                            }
+                            else if(Age==7)
+                            {
+                                document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 16-33.5 (kg)</h1>"; 
+                                if(Weight>=16 && Weight<=33.5)
+                                                { 
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<16)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>33.5)
+                                                {
+                                                    return 'Over Weight';                                    
+                                                }
+                            }
+                            else if(Age==7.5)
+                            {
+                                document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 16.5-36 (kg)</h1>"; 
+                                if(Weight>=16.5 && Weight<=36)
+                                                { 
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<16.5)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>36)
+                                                {
+                                                    return 'Over Weight';                                    
+                                                }
+                            }
+                            else if(Age==8)
+                            {
+                                document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 17.5-39.5 (kg)</h1>"; 
+                                if(Weight>=17.5 && Weight<=39.5)
+                                                { 
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<17.5)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>39.5)
+                                                {
+                                                    return 'Over Weight';                                    
+                                                }
+                            }
+                            else if(Age==8.5)
+                            {
+                                document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 18.5-42 (kg)</h1>"; 
+                                if(Weight>=18.5 && Weight<=42)
+                                                { 
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<18.5)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>42)
+                                                {
+                                                    return 'Over Weight';                                    
+                                                }
+                            }
+                            else if(Age==9)
+                            {
+                                document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 19-45.5 (kg)</h1>"; 
+                                if(Weight>=19 && Weight<=45.5)
+                                                { 
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<19)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>45.5)
+                                                {
+                                                    return 'Over Weight';                                    
+                                                }
+                            }
+                            else if(Age==9.5)
+                            {
+                                document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 20-48.5 (kg)</h1>"; 
+                                if(Weight>=20 && Weight<=48.5)
+                                                { 
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<20)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>48.5)
+                                                {
+                                                    return 'Over Weight';                                    
+                                                }
+                            }
+
+                            else if(Age==10)
+                            {
+                                document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 21-51.5 (kg)</h1>"; 
+                                if(Weight>=21 && Weight<=51.5)
+                                                { 
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<21)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>51.5)
+                                                {
+                                                    return 'Over Weight';                                    
+                                                }
+                            }
+
+                            else if(Age==10.5)
+                            {
+                                document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 21.5-55 (kg)</h1>"; 
+                                if(Weight>=21.5 && Weight<=55)
+                                                { 
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<21.5)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>55)
+                                                {
+                                                    return 'Over Weight';                                    
+                                                }
+                            }
+                            else if(Age==11)
+                            {
+                                document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 22.5-58 (kg)</h1>"; 
+                                if(Weight>=22.5 && Weight<=58)
+                                                { 
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<22.5)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>58)
+                                                {
+                                                    return 'Over Weight';                                    
+                                                }
+                            }
+                            else if(Age==11.5)
+                            {
+                                document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 24-62 (kg)</h1>"; 
+                                if(Weight>=24 && Weight<=62)
+                                                { 
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<24)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>62)
+                                                {
+                                                    return 'Over Weight';                                    
+                                                }
+                            }else if(Age==12)
+                            {
+                                document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 25-66 (kg)</h1>"; 
+                                if(Weight>=25 && Weight<=66)
+                                                { 
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<25)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>66)
+                                                {
+                                                    return 'Over Weight';                                    
+                                                }
+                            }else if(Age==12.5)
+                            {
+                                document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 26-69.5 (kg)</h1>"; 
+                                if(Weight>=26 && Weight<=69.5)
+                                                { 
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<26)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>69.5)
+                                                {
+                                                    return 'Over Weight';                                    
+                                                }
+                            }else if(Age==13)
+                            {
+                                document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 27.5-72 (kg)</h1>"; 
+                                if(Weight>=27.5 && Weight<=72)
+                                                { 
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<27.5)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>72)
+                                                {
+                                                    return 'Over Weight';                                    
+                                                }
+                            }else if(Age==13.5)
+                            {
+                                document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 29-75.5 (kg)</h1>"; 
+                                if(Weight>=29 && Weight<=75.5)
+                                                { 
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<29)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>75.5)
+                                                {
+                                                    return 'Over Weight';                                    
+                                                }
+                            }else if(Age==14)
+                            {
+                                document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 30.5-78 (kg)</h1>"; 
+                                if(Weight>=30.5 && Weight<=78)
+                                                { 
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<30.5)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>78)
+                                                {
+                                                    return 'Over Weight';                                    
+                                                }
+                            }else if(Age==14.5)
+                            {
+                                document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 32.5-81 (kg)</h1>"; 
+                                if(Weight>=32.5 && Weight<=81)
+                                                { 
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<32.5)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>81)
+                                                {
+                                                    return 'Over Weight';                                    
+                                                }
+                            }
+                            else if(Age==15)
+                            {
+                                document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 34.5-83 (kg)</h1>"; 
+                                if(Weight>=34.5 && Weight<=83)
+                                                { 
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<34.5)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>83)
+                                                {
+                                                    return 'Over Weight';                                    
+                                                }
+                            }
+                            
+                            else if(Age==15.5)
+                            {
+                                document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 36-84.5 (kg)</h1>"; 
+                                if(Weight>=36 && Weight<=84.5)
+                                                { 
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<36)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>84.5)
+                                                {
+                                                    return 'Over Weight';                                    
+                                                }
+                            }else if(Age==16)
+                            {
+                                document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 37-86 (kg)</h1>"; 
+                                if(Weight>=37 && Weight<=86)
+                                                { 
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<37)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>86)
+                                                {
+                                                    return 'Over Weight';                                    
+                                                }
+                            }else if(Age==16.5)
+                            {
+                                document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 38.5-86.8 (kg)</h1>"; 
+                                if(Weight>=38.5 && Weight<=86.8)
+                                                { 
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<38.5)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>86.8)
+                                                {
+                                                    return 'Over Weight';                                    
+                                                }
+                            }else if(Age==17)
+                            {
+                                document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 39.5-87.5 (kg)</h1>"; 
+                                if(Weight>=39.5 && Weight<=87.5)
+                                                { 
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<39.5)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>87.5)
+                                                {
+                                                    return 'Over Weight';                                    
+                                                }
+                            }else if(Age==17.5)
+                            {
+                                document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 41-87.5 (kg)</h1>"; 
+                                if(Weight>=41 && Weight<=87.5)
+                                                { 
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<41)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>87.5)
+                                                {
+                                                    return 'Over Weight';                                    
+                                                }
+                            }else if(Age==18)
+                            {
+                                document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 42-88 (kg)</h1>"; 
+                                if(Weight>=42 && Weight<=88)
+                                                { 
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<42)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>88)
+                                                {
+                                                    return 'Over Weight';                                    
+                                                }
+                            }
+
+
+                            else if(Height<4.6)
+                            {
+                                
+                                
+                                if(BMI>=18.5 && BMI<=24.9)
+                                {
+                                    document.getElementById('Weight_Range').innerHTML="<h2>You is Absolutely Fit and Fine</h2>";
+                                    return 'Healthy';
+                                
+                                }
+                                else if(BMI<18.5)
+                                {
+                                    
+                                let diff=18.5-BMI;
+                                let gain_weight=diff*(Height*0.305)^2;
+                                gain_weight=parseFloat(gain_weight).toFixed(1);
+                                document.getElementById('Weight_Range').innerHTML="<h2>You Need To Gain "+gain_weight+" (kg)</h2>"; 
+                                
+                                    return 'Under Weight';
+                                }
+                                else if(BMI>24.9)
+                                {
+                                    
+                                let diff=BMI-24.9;
+                                let Lose_weight=diff*Height*0.305*Height*0.305;
+                                Lose_weight=parseFloat(Lose_weight).toFixed(1);
+                                document.getElementById('Weight_Range').innerHTML="<h2>You Need To Lose "+Lose_weight+" (kg)</h2>"; 
+                                
+                                    return 'Over Weight';
+                                }
+
+                            }
+
+                            else
+                            {
+                                return 'Healthy';
+                            }
+                            
+
+
+                        }   
+                    } 
+
+                    else if(Gender=='Female')
+                    {
+                        if(Age_Month=='Month')
+                            {
+                                    
+                                    if(Age==0)
+                                    {
+                                        document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 2.4-4.2 (kg)</h1>"; 
+                                                if(Weight>=2.4 && Weight<=4.2)
+                                                {
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<2.4)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>4.2)
+                                                {
+                                                    return 'Over Weight';
+                                                }
+                                                
+                                    }
+                                    else if(Age==1)
+                                    {
+                                        document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 3.2-5.4 (kg)</h1>"; 
+                                                if(Weight>=3.2 && Weight<=5.4)
+                                                {
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<3.2)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>5.4)
+                                                {
+                                                    return 'Over Weight';
+                                                }
+                                                
+                                    }
+                                
+                                    else if(Age==2)
+                                    {
+                                        document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 4.0-6.5 (kg)</h1>"; 
+                                                if(Weight>=4.0 && Weight<=6.5)
+                                                {
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<4.0)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>6.5)
+                                                {
+                                                    return 'Over Weight';
+                                                }
+                                    }
+                                    
+                                    else if(Age==3)
+                                    {
+                                        document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 4.6-7.4 (kg)</h1>"; 
+                                                if(Weight>=4.6 && Weight<=7.4)
+                                                {
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<4.6)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>7.4)
+                                                {
+                                                    return 'Over Weight';
+                                                }
+                                    }
+                                    
+                                    else if(Age==4)
+                                    {
+                                        document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 5.1-8.1 (kg)</h1>"; 
+                                                if(Weight>=5.1 && Weight<=8.1)
+                                                {
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<5.1)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>8.1)
+                                                {
+                                                    return 'Over Weight';
+                                                }
+                                    }
+                                    
+                                    else if(Age==5)
+                                    {
+                                        document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 5.5-8.7 (kg)</h1>"; 
+                                                if(Weight>=5.5 && Weight<=8.7)
+                                                {
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<5.5)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>8.7)
+                                                {
+                                                    return 'Over Weight';
+                                                }
+                                    }
+                                    
+                                    else if(Age==6)
+                                    {
+                                        document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 5.8-9.2 (kg)</h1>"; 
+                                        if(Weight>=5.8 && Weight<=9.2)
+                                                {
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<5.8)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>9.2)
+                                                {
+                                                    return 'Over Weight';
+                                                }
+                                    }
+                                    
+                                    else if(Age==7)
+                                    {
+                                        document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 6.1-9.6 (kg)</h1>"; 
+                                        if(Weight>=6.1 && Weight<=9.6)
+                                                {
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<6.1)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>9.6)
+                                                {
+                                                    return 'Over Weight';
+                                                }
+                                    }
+                                    
+                                    else if(Age==8)
+                                    {
+                                        document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 6.3-10.0 (kg)</h1>"; 
+                                        if(Weight>=6.3 && Weight<=10.0)
+                                                {
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<6.3)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>10.0)
+                                                {
+                                                    return 'Over Weight';
+                                                }
+                                    }
+                                    
+                                    else if(Age==9)
+                                    {
+                                        document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 6.6-10.4 (kg)</h1>"; 
+                                        if(Weight>=6.6 && Weight<=10.4)
+                                                {
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<6.6)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>10.4)
+                                                {
+                                                    return 'Over Weight';
+                                                }
+                                    }
+                                    
+                                    else if(Age==10)
+                                    {
+                                        document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 6.8-10.7 (kg)</h1>"; 
+                                        if(Weight>=6.8 && Weight<=10.7)
+                                                {
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<6.8)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>10.7)
+                                                {
+                                                    return 'Over Weight';
+                                                }
+                                    }
+                                    
+                                    else if(Age==11)
+                                    {
+                                        document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 7.0-11.0 (kg)</h1>"; 
+                                        if(Weight>=7.0 && Weight<=11.0)
+                                                {
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<7.0)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>11.0)
+                                                {
+                                                    return 'Over Weight';
+                                                }
+                                    }
+                                    
+                                    else if(Age==12)
+                                    {
+                                        document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 7.1-11.3 (kg)</h1>"; 
+                                        if(Weight>=7.1 && Weight<=11.3)
+                                                {
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<7.1)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>11.3)
+                                                {
+                                                    return 'Over Weight';
+                                                }
+                                    }
+
+
+                                    else 
+                                {
+                                    
+                                    alert('Select age in Year');
+                                    location.reload();
+                                } 
+                                    
+                    }
+                        
+                        else if(Age_Month=='Year')
+                        {
+                            
+                            if(Age==0)
+                            {document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 2.3-4.0 (kg)</h1>"; 
+                                                if(Weight>=2.3 && Weight<=4)
+                                                { 
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<2.3)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>4.0)
+                                                {
+                                                    return 'Over Weight';                                    
+                                                }
+                                            
+                            }
+
+                            else if(Age==0.5)
+                            {
+                                document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 5.5-9.5 (kg)</h1>"; 
+                                if(Weight>=5.5 && Weight<=9.5)
+                                                { 
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<5.5)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>9.5)
+                                                {
+                                                    return 'Over Weight';                                    
+                                                }
+                            }
+
+                            else if(Age==1)
+                            {
+                                document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 7-11.5 (kg)</h1>"; 
+                                if(Weight>=7 && Weight<=11.5)
+                                                { 
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<7)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>11.5)
+                                                {
+                                                    return 'Over Weight';                                    
+                                                }
+                            }
+                            
+                            else if(Age==1.5)
+                            {
+                                document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 8.0-13.0 (kg)</h1>"; 
+                                if(Weight>=8.0 && Weight<=13.0)
+                                                { 
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<8.0)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>13.0)
+                                                {
+                                                    return 'Over Weight';                                    
+                                                }
+                            }
+                            else if(Age==2)
+                            {
+                                document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 9.0-14.5 (kg)</h1>"; 
+                                if(Weight>=9.0 && Weight<=14.5)
+                                                { 
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<9.0)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>14.5)
+                                                {
+                                                    return 'Over Weight';                                    
+                                                }
+                            }
+                            else if(Age==2.5)
+                            {
+                                document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 10.0-16.2 (kg)</h1>"; 
+                                if(Weight>=10.0 && Weight<=16.2)
+                                                { 
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<10.0)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>16.2)
+                                                {
+                                                    return 'Over Weight';                                    
+                                                }
+                            }
+                            else if(Age==3)
+                            {
+                                document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 11.0-17.5 (kg)</h1>"; 
+                                if(Weight>=11.0 && Weight<=17.5)
+                                                { 
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<11.0)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>17.5)
+                                                {
+                                                    return 'Over Weight';                                    
+                                                }
+                            }
+                            else if(Age==3.5)
+                            {
+                                document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 11.5-19 (kg)</h1>"; 
+                                if(Weight>=11.5 && Weight<=19)
+                                                { 
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<11.5)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>19)
+                                                {
+                                                    return 'Over Weight';                                    
+                                                }
+                            }
+                            else if(Age==4)
+                            {
+                                document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 12.5-21 (kg)</h1>"; 
+                                if(Weight>=12.5 && Weight<=21)
+                                                { 
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<12.5)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>21)
+                                                {
+                                                    return 'Over Weight';                                    
+                                                }
+                            }
+                            else if(Age==4.5)
+                            {
+                                document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 12.8-23 (kg)</h1>"; 
+                                if(Weight>=12.8 && Weight<=23)
+                                                { 
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<12.8)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>23)
+                                                {
+                                                    return 'Over Weight';                                    
+                                                }
+                            }
+                            else if(Age==5)
+                            {
+                                document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 13-25 (kg)</h1>"; 
+                                if(Weight>=13.0 && Weight<=25)
+                                                { 
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<13.0)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>25)
+                                                {
+                                                    return 'Over Weight';                                    
+                                                }
+                            }
+                            else if(Age==5.5)
+                            {
+                                document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 13.2-27 (kg)</h1>"; 
+                                if(Weight>=13.2 && Weight<=27)
+                                                { 
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<13.2)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>27)
+                                                {
+                                                    return 'Over Weight';                                    
+                                                }
+                            }
+                            else if(Age==6)
+                            {
+                                document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 13.8-29 (kg)</h1>"; 
+                                if(Weight>=13.8 && Weight<=29)
+                                                { 
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<13.8)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>29)
+                                                {
+                                                    return 'Over Weight';                                    
+                                                }
+                            }
+                            else if(Age==6.5)
+                            {
+                                document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 14-31 (kg)</h1>"; 
+                                if(Weight>=14 && Weight<=31)
+                                                { 
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<14)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>31)
+                                                {
+                                                    return 'Over Weight';                                    
+                                                }
+                            }
+                            else if(Age==7)
+                            {
+                                document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 15-33 (kg)</h1>"; 
+                                if(Weight>=15 && Weight<=33.0)
+                                                { 
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<15)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>33.0)
+                                                {
+                                                    return 'Over Weight';                                    
+                                                }
+                            }
+                            else if(Age==7.5)
+                            {
+                                document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 16.0-36.0 (kg)</h1>"; 
+                                if(Weight>=16.0 && Weight<=36)
+                                                { 
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<16.0)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>36)
+                                                {
+                                                    return 'Over Weight';                                    
+                                                }
+                            }
+                            else if(Age==8)
+                            {
+                                document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 16.5-38 (kg)</h1>"; 
+                                if(Weight>=16.5 && Weight<=38)
+                                                { 
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<16.5)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>38)
+                                                {
+                                                    return 'Over Weight';                                    
+                                                }
+                            }
+                            else if(Age==8.5)
+                            {
+                                document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 17.2-41 (kg)</h1>"; 
+                                if(Weight>=17.2 && Weight<=41)
+                                                { 
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<17.2)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>41)
+                                                {
+                                                    return 'Over Weight';                                    
+                                                }
+                            }
+                            else if(Age==9)
+                            {
+                                document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 18.2-43 (kg)</h1>"; 
+                                if(Weight>=18.2 && Weight<=43)
+                                                { 
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<18.2)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>43)
+                                                {
+                                                    return 'Over Weight';                                    
+                                                }
+                            }
+                            else if(Age==9.5)
+                            {
+                                document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 19.2-46 (kg)</h1>"; 
+                                if(Weight>=19.2 && Weight<=46)
+                                                { 
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<19.2)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>46)
+                                                {
+                                                    return 'Over Weight';                                    
+                                                }
+                            }
+                            else if(Age==10)
+                            {
+                                document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 20.8-49 (kg)</h1>"; 
+                                if(Weight>=20.8 && Weight<=49)
+                                                { 
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<20.8)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>49)
+                                                {
+                                                    return 'Over Weight';                                    
+                                                }
+                            }
+
+                            else if(Age==10.5)
+                            {
+                                document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 22-52.5 (kg)</h1>"; 
+                                if(Weight>=22 && Weight<=52.5)
+                                                { 
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<22)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>52.5)
+                                                {
+                                                    return 'Over Weight';                                    
+                                                }
+                            }
+                            else if(Age==11)
+                            {
+                                document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 23-56 (kg)</h1>"; 
+                                if(Weight>=23 && Weight<=56)
+                                                { 
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<23)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>56)
+                                                {
+                                                    return 'Over Weight';                                    
+                                                }
+                            }
+                            else if(Age==11.5)
+                            {
+                                document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 25-59 (kg)</h1>"; 
+                                if(Weight>=25 && Weight<=59)
+                                                { 
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<25)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>59)
+                                                {
+                                                    return 'Over Weight';                                    
+                                                }
+                            }else if(Age==12)
+                            {
+                                document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 26-62 (kg)</h1>"; 
+                                if(Weight>=26 && Weight<=62)
+                                                { 
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<26)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>62)
+                                                {
+                                                    return 'Over Weight';                                    
+                                                }
+                            }else if(Age==12.5)
+                            {
+                                document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 27.5-65 (kg)</h1>"; 
+                                if(Weight>=27.5 && Weight<=65)
+                                                { 
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<27.5)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>65)
+                                                {
+                                                    return 'Over Weight';                                    
+                                                }
+                            }else if(Age==13)
+                            {
+                                document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 28.5-67 (kg)</h1>"; 
+                                if(Weight>=28.5 && Weight<=67)
+                                                { 
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<28.5)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>67)
+                                                {
+                                                    return 'Over Weight';                                    
+                                                }
+                            }else if(Age==13.5)
+                            {
+                                document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 30.2-69 (kg)</h1>"; 
+                                if(Weight>=30.2 && Weight<=69)
+                                                { 
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<30.2)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>69)
+                                                {
+                                                    return 'Over Weight';                                    
+                                                }
+                            }else if(Age==14)
+                            {
+                                document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 31.2-70.5 (kg)</h1>"; 
+                                if(Weight>=31.2 && Weight<=70.5)
+                                                { 
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<31.2)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>70.5)
+                                                {
+                                                    return 'Over Weight';                                    
+                                                }
+                            }else if(Age==14.5)
+                            {
+                                document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 32.5-71 (kg)</h1>"; 
+                                if(Weight>=32.5 && Weight<=71)
+                                                { 
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<32.5)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>71)
+                                                {
+                                                    return 'Over Weight';                                    
+                                                }
+                            }
+                            else if(Age==15)
+                            {
+                                document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 33-72 (kg)</h1>"; 
+                                if(Weight>=33 && Weight<=72)
+                                                { 
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<33)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>72)
+                                                {
+                                                    return 'Over Weight';                                    
+                                                }
+                            }
+                            
+                            else if(Age==15.5)
+                            {
+                                document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 34-72 (kg)</h1>"; 
+                                if(Weight>=34 && Weight<=72)
+                                                { 
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<34)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>72)
+                                                {
+                                                    return 'Over Weight';                                    
+                                                }
+                            }else if(Age==16)
+                            {
+                                document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 34.8-72.5 (kg)</h1>"; 
+                                if(Weight>=34.8 && Weight<=72.5)
+                                                { 
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<34.8)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>72.5)
+                                                {
+                                                    return 'Over Weight';                                    
+                                                }
+                            }else if(Age==16.5)
+                            {
+                                document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 35.5-72.5 (kg)</h1>"; 
+                                if(Weight>=35.5 && Weight<=72.5)
+                                                { 
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<35.5)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>72.8)
+                                                {
+                                                    return 'Over Weight';                                    
+                                                }
+                            }else if(Age==17)
+                            {
+                                document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 36-73 (kg)</h1>"; 
+                                if(Weight>=36 && Weight<=73)
+                                                { 
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<36)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>73)
+                                                {
+                                                    return 'Over Weight';                                    
+                                                }
+                            }else if(Age==17.5)
+                            {
+                                document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 37-73 (kg)</h1>"; 
+                                if(Weight>=37 && Weight<=73)
+                                                { 
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<37)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>73)
+                                                {
+                                                    return 'Over Weight';                                    
+                                                }
+                            }else if(Age==18)
+                            {
+                                document.getElementById('Weight_Range').innerHTML="<h1>Ideal => 37.5-74 (kg)</h1>"; 
+                                if(Weight>=37.5 && Weight<=74)
+                                                { 
+                                                    return 'Healthy';
+                                                }
+                                                else if(Weight<37.5)
+                                                {
+                                                    return 'Under Weight';
+                                                }
+                                                else if(Weight>74)
+                                                {
+                                                    return 'Over Weight';                                    
+                                                }
+                            }
+
+                            else if(Height<4.6)
+                            {
+                                
+                                
+                                if(BMI>=18.5 && BMI<=24.9)
+                                {
+                                    document.getElementById('Weight_Range').innerHTML="<h2>You is Absolutely Fit and Fine</h2>";
+                                    return 'Healthy';
+                                
+                                }
+                                else if(BMI<18.5)
+                                {
+                                    
+                                let diff=18.5-BMI;
+                                let gain_weight=diff*(Height*0.305)^2;
+                                gain_weight=parseFloat(gain_weight).toFixed(1);
+                                document.getElementById('Weight_Range').innerHTML="<h2>You Need To Gain "+gain_weight+" (kg)</h2>"; 
+                                
+                                    return 'Under Weight';
+                                }
+                                else if(BMI>24.9)
+                                {
+                                    
+                                let diff=BMI-24.9;
+                                let Lose_weight=diff*Height*0.305*Height*0.305;
+                                Lose_weight=parseFloat(Lose_weight).toFixed(1);
+                                document.getElementById('Weight_Range').innerHTML="<h2>You Need To Lose "+Lose_weight+" (kg)</h2>"; 
+                                
+                                    return 'Over Weight';
+                                }
+
+                            }
+                            
+
+                            else
+                            {
+                                return 'Healthy';
+                            }
+
+                        }
+
+                    }
+
+            
+            
+                 
+        }
+
+
+        function computeResult1(Weight,Height,Gender,BMI)
+        {
+           if(Height>=4.6 && Height<=7.0)
+           {
+                if(Gender=='Male')
+                {
+
+                    if(Height>=4.6 && Height<4.7)
+                    {
+                        let min=28.5;
+                        let max=34.9;
+                        document.getElementById('Weight_Range').innerHTML='<h1>Ideal => '+min+'-'+max+' (kg)</h1>'; 
+                        if(Weight>=min && Weight<=max)
+                        {
+                            return 'Healthy';
+                        }
+                        else if(Weight<min)
+                        {
+                            return 'Under Weight';
+                        }
+                        else if(Weight>max)
+                        {
+                            return 'Over Weight';
+                        }
+                    }
+                    
+                    if(Height>=4.7 && Height<4.8)
+                    {
+                        let min=30.8;
+                        let max=38.1;
+                        document.getElementById('Weight_Range').innerHTML='<h1>Ideal => '+min+'-'+max+' (kg)</h1>';
+                        if(Weight>=min && Weight<=max)
+                        {
+                            return 'Healthy';
+                        }
+                        else if(Weight<min)
+                        {
+                            return 'Under Weight';
+                        }
+                        else if(Weight>max)
+                        {
+                            return 'Over Weight';
+                        }
+                    }
+
+                    if(Height>=4.8 && Height<4.9)
+                    {
+                        let min=33.5;
+                        let max=40.8;
+                        document.getElementById('Weight_Range').innerHTML='<h1>Ideal => '+min+'-'+max+' (kg)</h1>';
+                         if(Weight>=min && Weight<=max)
+                        {
+                            return 'Healthy';
+                        }
+                        else if(Weight<min)
+                        {
+                            return 'Under Weight';
+                        }
+                        else if(Weight>max)
+                        {
+                            return 'Over Weight';
+                        }
+                    }
+
+                    
+                    if(Height>=4.9 && Height<4.10)
+                    {
+                        let min=35.8;
+                        let max=43.9;
+                        document.getElementById('Weight_Range').innerHTML='<h1>Ideal => '+min+'-'+max+' (kg)</h1>';
+                         if(Weight>=min && Weight<=max)
+                        {
+                            return 'Healthy';
+                        }
+                        else if(Weight<min)
+                        {
+                            return 'Under Weight';
+                        }
+                        else if(Weight>max)
+                        {
+                            return 'Over Weight';
+                        }
+                    }
+
+                    
+                    if(Height>=4.10 && Height<4.11)
+                    {
+                        let min=38.5;
+                        let max=46.7;
+                        document.getElementById('Weight_Range').innerHTML='<h1>Ideal => '+min+'-'+max+' (kg)</h1>';
+                         if(Weight>=min && Weight<=max)
+                        {
+                            return 'Healthy';
+                        }
+                        else if(Weight<min)
+                        {
+                            return 'Under Weight';
+                        }
+                        else if(Weight>max)
+                        {
+                            return 'Over Weight';
+                        }
+                    }
+
+                    
+                    if(Height>=4.11 && Height<5.0)
+                    {
+                        let min=40.8;
+                        let max=49.9;
+                        document.getElementById('Weight_Range').innerHTML='<h1>Ideal => '+min+'-'+max+' (kg)</h1>';
+                         if(Weight>=min && Weight<=max)
+                        {
+                            return 'Healthy';
+                        }
+                        else if(Weight<min)
+                        {
+                            return 'Under Weight';
+                        }
+                        else if(Weight>max)
+                        {
+                            return 'Over Weight';
+                        }
+                    }
+
+                    
+                    if(Height>=5.0 && Height<5.1)
+                    {
+                        let min=43.1;
+                        let max=53;
+                        document.getElementById('Weight_Range').innerHTML='<h1>Ideal => '+min+'-'+max+' (kg)</h1>';
+                         if(Weight>=min && Weight<=max)
+                        {
+                            return 'Healthy';
+                        }
+                        else if(Weight<min)
+                        {
+                            return 'Under Weight';
+                        }
+                        else if(Weight>max)
+                        {
+                            return 'Over Weight';
+                        }
+                    }
+
+                    
+                    if(Height>=5.1 && Height<5.2)
+                    {
+                        let min=45.8;
+                        let max=55.8;
+                        document.getElementById('Weight_Range').innerHTML='<h1>Ideal => '+min+'-'+max+' (kg)</h1>';
+                         if(Weight>=min && Weight<=max)
+                        {
+                            return 'Healthy';
+                        }
+                        else if(Weight<min)
+                        {
+                            return 'Under Weight';
+                        }
+                        else if(Weight>max)
+                        {
+                            return 'Over Weight';
+                        }
+                    }
+
+                    
+                    if(Height>=5.2 && Height<5.3)
+                    {
+                        let min=48.1;
+                        let max=58.9;
+                        document.getElementById('Weight_Range').innerHTML='<h1>Ideal => '+min+'-'+max+' (kg)</h1>';
+                         if(Weight>=min && Weight<=max)
+                        {
+                            return 'Healthy';
+                        }
+                        else if(Weight<min)
+                        {
+                            return 'Under Weight';
+                        }
+                        else if(Weight>max)
+                        {
+                            return 'Over Weight';
+                        }
+                    }
+
+                    
+                    if(Height>=5.3 && Height<5.4)
+                    {
+                        let min=50.8;
+                        let max=61.6;
+                        document.getElementById('Weight_Range').innerHTML='<h1>Ideal => '+min+'-'+max+' (kg)</h1>';
+                         if(Weight>=min && Weight<=max)
+                        {
+                            return 'Healthy';
+                        }
+                        else if(Weight<min)
+                        {
+                            return 'Under Weight';
+                        }
+                        else if(Weight>max)
+                        {
+                            return 'Over Weight';
+                        }
+                    }
+
+                    
+                    if(Height>=5.4 && Height<5.5)
+                    {
+                        let min=53;
+                        let max=64.8;
+                        document.getElementById('Weight_Range').innerHTML='<h1>Ideal => '+min+'-'+max+' (kg)</h1>';
+                         if(Weight>=min && Weight<=max)
+                        {
+                            return 'Healthy';
+                        }
+                        else if(Weight<min)
+                        {
+                            return 'Under Weight';
+                        }
+                        else if(Weight>max)
+                        {
+                            return 'Over Weight';
+                        }
+                    }
+
+                    
+                    if(Height>=5.5 && Height<5.6)
+                    {
+                        let min=55.3;
+                        let max=68;
+                        document.getElementById('Weight_Range').innerHTML='<h1>Ideal => '+min+'-'+max+' (kg)</h1>';
+                         if(Weight>=min && Weight<=max)
+                        {
+                            return 'Healthy';
+                        }
+                        else if(Weight<min)
+                        {
+                            return 'Under Weight';
+                        }
+                        else if(Weight>max)
+                        {
+                            return 'Over Weight';
+                        }
+                    }
+
+                    
+                    if(Height>=5.6 && Height<5.7)
+                    {
+                        let min=58;
+                        let max=70.7;
+                        document.getElementById('Weight_Range').innerHTML='<h1>Ideal => '+min+'-'+max+' (kg)</h1>';
+                         if(Weight>=min && Weight<=max)
+                        {
+                            return 'Healthy';
+                        }
+                        else if(Weight<min)
+                        {
+                            return 'Under Weight';
+                        }
+                        else if(Weight>max)
+                        {
+                            return 'Over Weight';
+                        }
+                    }
+
+                    
+                    if(Height>=5.7 && Height<5.8)
+                    {
+                        let min=60.3;
+                        let max=73.9;
+                        document.getElementById('Weight_Range').innerHTML='<h1>Ideal => '+min+'-'+max+' (kg)</h1>';
+                         if(Weight>=min && Weight<=max)
+                        {
+                            return 'Healthy';
+                        }
+                        else if(Weight<min)
+                        {
+                            return 'Under Weight';
+                        }
+                        else if(Weight>max)
+                        {
+                            return 'Over Weight';
+                        }
+                    }
+
+                    
+                    if(Height>=5.8 && Height<5.9)
+                    {
+                        let min=63;
+                        let max=76.6;
+                        document.getElementById('Weight_Range').innerHTML='<h1>Ideal => '+min+'-'+max+' (kg)</h1>';
+                         if(Weight>=min && Weight<=max)
+                        {
+                            return 'Healthy';
+                        }
+                        else if(Weight<min)
+                        {
+                            return 'Under Weight';
+                        }
+                        else if(Weight>max)
+                        {
+                            return 'Over Weight';
+                        }
+                    }
+
+                    
+                    if(Height>=5.9 && Height<5.10)
+                    {
+                        let min=65.5;
+                        let max=79.8;
+                        document.getElementById('Weight_Range').innerHTML='<h1>Ideal => '+min+'-'+max+' (kg)</h1>';
+                         if(Weight>=min && Weight<=max)
+                        {
+                            return 'Healthy';
+                        }
+                        else if(Weight<min)
+                        {
+                            return 'Under Weight';
+                        }
+                        else if(Weight>max)
+                        {
+                            return 'Over Weight';
+                        }
+                    }
+
+                    
+                    if(Height>=5.10 && Height<5.11)
+                    {
+                        let min=67.6;
+                        let max=83;
+                        document.getElementById('Weight_Range').innerHTML='<h1>Ideal => '+min+'-'+max+' (kg)</h1>';
+                         if(Weight>=min && Weight<=max)
+                        {
+                            return 'Healthy';
+                        }
+                        else if(Weight<min)
+                        {
+                            return 'Under Weight';
+                        }
+                        else if(Weight>max)
+                        {
+                            return 'Over Weight';
+                        }
+                    }
+
+                    
+                    if(Height>=5.11 && Height<6.0)
+                    {
+                        let min=70.3;
+                        let max=85.7;
+                        document.getElementById('Weight_Range').innerHTML='<h1>Ideal => '+min+'-'+max+' (kg)</h1>';
+                         if(Weight>=min && Weight<=max)
+                        {
+                            return 'Healthy';
+                        }
+                        else if(Weight<min)
+                        {
+                            return 'Under Weight';
+                        }
+                        else if(Weight>max)
+                        {
+                            return 'Over Weight';
+                        }
+                    }
+
+                    
+                    if(Height>=6.0 && Height<6.1)
+                    {
+                        let min=72.6;
+                        let max=88.9;
+                        document.getElementById('Weight_Range').innerHTML='<h1>Ideal => '+min+'-'+max+' (kg)</h1>';
+                         if(Weight>=min && Weight<=max)
+                        {
+                            return 'Healthy';
+                        }
+                        else if(Weight<min)
+                        {
+                            return 'Under Weight';
+                        }
+                        else if(Weight>max)
+                        {
+                            return 'Over Weight';
+                        }
+                    }
+
+                    
+                    if(Height>=6.1 && Height<6.2)
+                    {
+                        let min=75.3;
+                        let max=91.6;
+                        document.getElementById('Weight_Range').innerHTML='<h1>Ideal => '+min+'-'+max+' (kg)</h1>';
+                         if(Weight>=min && Weight<=max)
+                        {
+                            return 'Healthy';
+                        }
+                        else if(Weight<min)
+                        {
+                            return 'Under Weight';
+                        }
+                        else if(Weight>max)
+                        {
+                            return 'Over Weight';
+                        }
+                    }
+
+                    
+                    if(Height>=6.2 && Height<6.3)
+                    {
+                        let min=77.5;
+                        let max=94.8;
+                        document.getElementById('Weight_Range').innerHTML='<h1>Ideal => '+min+'-'+max+' (kg)</h1>';
+                         if(Weight>=min && Weight<=max)
+                        {
+                            return 'Healthy';
+                        }
+                        else if(Weight<min)
+                        {
+                            return 'Under Weight';
+                        }
+                        else if(Weight>max)
+                        {
+                            return 'Over Weight';
+                        }
+                    }
+
+                    
+                    if(Height>=6.3 && Height<6.4)
+                    {
+                        let min=79.8;
+                        let max=98;
+                        document.getElementById('Weight_Range').innerHTML='<h1>Ideal => '+min+'-'+max+' (kg)</h1>';
+                         if(Weight>=min && Weight<=max)
+                        {
+                            return 'Healthy';
+                        }
+                        else if(Weight<min)
+                        {
+                            return 'Under Weight';
+                        }
+                        else if(Weight>max)
+                        {
+                            return 'Over Weight';
+                        }
+                    }
+
+                    
+                    if(Height>=6.4 && Height<6.5)
+                    {
+                        let min=82.5;
+                        let max=100.6;
+                        document.getElementById('Weight_Range').innerHTML='<h1>Ideal => '+min+'-'+max+' (kg)</h1>';
+                         if(Weight>=min && Weight<=max)
+                        {
+                            return 'Healthy';
+                        }
+                        else if(Weight<min)
+                        {
+                            return 'Under Weight';
+                        }
+                        else if(Weight>max)
+                        {
+                            return 'Over Weight';
+                        }
+                    }
+
+                    
+                    if(Height>=6.5 && Height<6.6)
+                    {
+                        let min=84.8;
+                        let max=103.8;
+                        document.getElementById('Weight_Range').innerHTML='<h1>Ideal => '+min+'-'+max+' (kg)</h1>';
+                         if(Weight>=min && Weight<=max)
+                        {
+                            return 'Healthy';
+                        }
+                        else if(Weight<min)
+                        {
+                            return 'Under Weight';
+                        }
+                        else if(Weight>max)
+                        {
+                            return 'Over Weight';
+                        }
+                    }
+
+                    
+                    if(Height>=6.6 && Height<6.7)
+                    {
+                        let min=87.5;
+                        let max=106.5;
+                        document.getElementById('Weight_Range').innerHTML='<h1>Ideal => '+min+'-'+max+' (kg)</h1>';
+                         if(Weight>=min && Weight<=max)
+                        {
+                            return 'Healthy';
+                        }
+                        else if(Weight<min)
+                        {
+                            return 'Under Weight';
+                        }
+                        else if(Weight>max)
+                        {
+                            return 'Over Weight';
+                        }
+                    }
+
+                    
+                    if(Height>=6.7 && Height<6.8)
+                    {
+                        let min=89.8;
+                        let max=109.7;
+                        document.getElementById('Weight_Range').innerHTML='<h1>Ideal => '+min+'-'+max+' (kg)</h1>';
+                         if(Weight>=min && Weight<=max)
+                        {
+                            return 'Healthy';
+                        }
+                        else if(Weight<min)
+                        {
+                            return 'Under Weight';
+                        }
+                        else if(Weight>max)
+                        {
+                            return 'Over Weight';
+                        }
+                    }
+
+                    
+                    if(Height>=6.8 && Height<6.9)
+                    {
+                        let min=92;
+                        let max=112.9;
+                        document.getElementById('Weight_Range').innerHTML='<h1>Ideal => '+min+'-'+max+' (kg)</h1>';
+                         if(Weight>=min && Weight<=max)
+                        {
+                            return 'Healthy';
+                        }
+                        else if(Weight<min)
+                        {
+                            return 'Under Weight';
+                        }
+                        else if(Weight>max)
+                        {
+                            return 'Over Weight';
+                        }
+                    }
+
+                    
+                    if(Height>=6.9 && Height<6.10)
+                    {
+                        let min=94.8;
+                        let max=115.6;
+                        document.getElementById('Weight_Range').innerHTML='<h1>Ideal => '+min+'-'+max+' (kg)</h1>';
+                         if(Weight>=min && Weight<=max)
+                        {
+                            return 'Healthy';
+                        }
+                        else if(Weight<min)
+                        {
+                            return 'Under Weight';
+                        }
+                        else if(Weight>max)
+                        {
+                            return 'Over Weight';
+                        }
+                    }
+
+                    
+                    if(Height>=6.10 && Height<6.11)
+                    {
+                        let min=97;
+                        let max=118.8;
+                        document.getElementById('Weight_Range').innerHTML='<h1>Ideal => '+min+'-'+max+' (kg)</h1>';
+                         if(Weight>=min && Weight<=max)
+                        {
+                            return 'Healthy';
+                        }
+                        else if(Weight<min)
+                        {
+                            return 'Under Weight';
+                        }
+                        else if(Weight>max)
+                        {
+                            return 'Over Weight';
+                        }
+                    }
+
+                    
+                    if(Height>=6.11 && Height<7.0)
+                    {
+                        let min=99.8;
+                        let max=121.5;
+                        document.getElementById('Weight_Range').innerHTML='<h1>Ideal => '+min+'-'+max+' (kg)</h1>';
+                         if(Weight>=min && Weight<=max)
+                        {
+                            return 'Healthy';
+                        }
+                        else if(Weight<min)
+                        {
+                            return 'Under Weight';
+                        }
+                        else if(Weight>max)
+                        {
+                            return 'Over Weight';
+                        }
+                    }
+
+                    
+                    if(Height>=7.0 && Height<7.1)
+                    {
+                        let min=102;
+                        let max=124.7;
+                        document.getElementById('Weight_Range').innerHTML='<h1>Ideal => '+min+'-'+max+' (kg)</h1>';
+                         if(Weight>=min && Weight<=max)
+                        {
+                            return 'Healthy';
+                        }
+                        else if(Weight<min)
+                        {
+                            return 'Under Weight';
+                        }
+                        else if(Weight>max)
+                        {
+                            return 'Over Weight';
+                        }
+                    }
+
+
+                }
+                else if(Gender="Female")
+                {
+
+                    if(Height>=4.6 && Height<4.7)
+                    {
+                        let min=28.5;
+                        let max=34.9;
+                        document.getElementById('Weight_Range').innerHTML='<h1>Ideal => '+min+'-'+max+' (kg)</h1>';
+                        if(Weight>=min && Weight<=max)
+                        {
+                            return 'Healthy';
+                        }
+                        else if(Weight<min)
+                        {
+                            return 'Under Weight';
+                        }
+                        else if(Weight>max)
+                        {
+                            return 'Over Weight';
+                        }
+                    }
+                    
+                    if(Height>=4.7 && Height<4.8)
+                    {
+                        let min=30.8;
+                        let max=37.6;
+                        document.getElementById('Weight_Range').innerHTML='<h1>Ideal => '+min+'-'+max+' (kg)</h1>';
+                        if(Weight>=min && Weight<=max)
+                        {
+                            return 'Healthy';
+                        }
+                        else if(Weight<min)
+                        {
+                            return 'Under Weight';
+                        }
+                        else if(Weight>max)
+                        {
+                            return 'Over Weight';
+                        }
+                    }
+
+                    if(Height>=4.8 && Height<4.9)
+                    {
+                        let min=32.6;
+                        let max=39.9;
+                        document.getElementById('Weight_Range').innerHTML='<h1>Ideal => '+min+'-'+max+' (kg)</h1>';
+                         if(Weight>=min && Weight<=max)
+                        {
+                            return 'Healthy';
+                        }
+                        else if(Weight<min)
+                        {
+                            return 'Under Weight';
+                        }
+                        else if(Weight>max)
+                        {
+                            return 'Over Weight';
+                        }
+                    }
+
+                    
+                    if(Height>=4.9 && Height<4.10)
+                    {
+                        let min=34.9;
+                        let max=42.6;
+                        document.getElementById('Weight_Range').innerHTML='<h1>Ideal => '+min+'-'+max+' (kg)</h1>';
+                         if(Weight>=min && Weight<=max)
+                        {
+                            return 'Healthy';
+                        }
+                        else if(Weight<min)
+                        {
+                            return 'Under Weight';
+                        }
+                        else if(Weight>max)
+                        {
+                            return 'Over Weight';
+                        }
+                    }
+
+                    
+                    if(Height>=4.10 && Height<4.11)
+                    {
+                        let min=36.4;
+                        let max=44.9;
+                        document.getElementById('Weight_Range').innerHTML='<h1>Ideal => '+min+'-'+max+' (kg)</h1>';
+                         if(Weight>=min && Weight<=max)
+                        {
+                            return 'Healthy';
+                        }
+                        else if(Weight<min)
+                        {
+                            return 'Under Weight';
+                        }
+                        else if(Weight>max)
+                        {
+                            return 'Over Weight';
+                        }
+                    }
+
+                    
+                    if(Height>=4.11 && Height<5.0)
+                    {
+                        let min=39;
+                        let max=47.6;
+                        document.getElementById('Weight_Range').innerHTML='<h1>Ideal => '+min+'-'+max+' (kg)</h1>';
+                         if(Weight>=min && Weight<=max)
+                        {
+                            return 'Healthy';
+                        }
+                        else if(Weight<min)
+                        {
+                            return 'Under Weight';
+                        }
+                        else if(Weight>max)
+                        {
+                            return 'Over Weight';
+                        }
+                    }
+
+                    
+                    if(Height>=5.0 && Height<5.1)
+                    {
+                        let min=40.8;
+                        let max=49.9;
+                        document.getElementById('Weight_Range').innerHTML='<h1>Ideal => '+min+'-'+max+' (kg)</h1>';
+                         if(Weight>=min && Weight<=max)
+                        {
+                            return 'Healthy';
+                        }
+                        else if(Weight<min)
+                        {
+                            return 'Under Weight';
+                        }
+                        else if(Weight>max)
+                        {
+                            return 'Over Weight';
+                        }
+                    }
+
+                    
+                    if(Height>=5.1 && Height<5.2)
+                    {
+                        let min=43.1;
+                        let max=52.6;
+                        document.getElementById('Weight_Range').innerHTML='<h1>Ideal => '+min+'-'+max+' (kg)</h1>';
+                         if(Weight>=min && Weight<=max)
+                        {
+                            return 'Healthy';
+                        }
+                        else if(Weight<min)
+                        {
+                            return 'Under Weight';
+                        }
+                        else if(Weight>max)
+                        {
+                            return 'Over Weight';
+                        }
+                    }
+
+                    
+                    if(Height>=5.2 && Height<5.3)
+                    {
+                        let min=44.9;
+                        let max=54.9;
+                        document.getElementById('Weight_Range').innerHTML='<h1>Ideal => '+min+'-'+max+' (kg)</h1>';
+                         if(Weight>=min && Weight<=max)
+                        {
+                            return 'Healthy';
+                        }
+                        else if(Weight<min)
+                        {
+                            return 'Under Weight';
+                        }
+                        else if(Weight>max)
+                        {
+                            return 'Over Weight';
+                        }
+                    }
+
+                    
+                    if(Height>=5.3 && Height<5.4)
+                    {
+                        let min=47.2;
+                        let max=57.6;
+                        document.getElementById('Weight_Range').innerHTML='<h1>Ideal => '+min+'-'+max+' (kg)</h1>';
+                         if(Weight>=min && Weight<=max)
+                        {
+                            return 'Healthy';
+                        }
+                        else if(Weight<min)
+                        {
+                            return 'Under Weight';
+                        }
+                        else if(Weight>max)
+                        {
+                            return 'Over Weight';
+                        }
+                    }
+
+                    
+                    if(Height>=5.4 && Height<5.5)
+                    {
+                        let min=49;
+                        let max=59.9;
+                        document.getElementById('Weight_Range').innerHTML='<h1>Ideal => '+min+'-'+max+' (kg)</h1>';
+                         if(Weight>=min && Weight<=max)
+                        {
+                            return 'Healthy';
+                        }
+                        else if(Weight<min)
+                        {
+                            return 'Under Weight';
+                        }
+                        else if(Weight>max)
+                        {
+                            return 'Over Weight';
+                        }
+                    }
+
+                    
+                    if(Height>=5.5 && Height<5.6)
+                    {
+                        let min=51.2;
+                        let max=62.6;
+                        document.getElementById('Weight_Range').innerHTML='<h1>Ideal => '+min+'-'+max+' (kg)</h1>';
+                         if(Weight>=min && Weight<=max)
+                        {
+                            return 'Healthy';
+                        }
+                        else if(Weight<min)
+                        {
+                            return 'Under Weight';
+                        }
+                        else if(Weight>max)
+                        {
+                            return 'Over Weight';
+                        }
+                    }
+
+                    
+                    if(Height>=5.6 && Height<5.7)
+                    {
+                        let min=53;
+                        let max=64.8;
+                        document.getElementById('Weight_Range').innerHTML='<h1>Ideal => '+min+'-'+max+' (kg)</h1>';
+                         if(Weight>=min && Weight<=max)
+                        {
+                            return 'Healthy';
+                        }
+                        else if(Weight<min)
+                        {
+                            return 'Under Weight';
+                        }
+                        else if(Weight>max)
+                        {
+                            return 'Over Weight';
+                        }
+                    }
+
+                    
+                    if(Height>=5.7 && Height<5.8)
+                    {
+                        let min=55.3;
+                        let max=67.6;
+                        document.getElementById('Weight_Range').innerHTML='<h1>Ideal => '+min+'-'+max+' (kg)</h1>';
+                         if(Weight>=min && Weight<=max)
+                        {
+                            return 'Healthy';
+                        }
+                        else if(Weight<min)
+                        {
+                            return 'Under Weight';
+                        }
+                        else if(Weight>max)
+                        {
+                            return 'Over Weight';
+                        }
+                    }
+
+                    
+                    if(Height>=5.8 && Height<5.9)
+                    {
+                        let min=57.1;
+                        let max=69.8;
+                        document.getElementById('Weight_Range').innerHTML='<h1>Ideal => '+min+'-'+max+' (kg)</h1>';
+                         if(Weight>=min && Weight<=max)
+                        {
+                            return 'Healthy';
+                        }
+                        else if(Weight<min)
+                        {
+                            return 'Under Weight';
+                        }
+                        else if(Weight>max)
+                        {
+                            return 'Over Weight';
+                        }
+                    }
+
+                    
+                    if(Height>=5.9 && Height<5.10)
+                    {
+                        let min=59.4;
+                        let max=72.6;
+                        document.getElementById('Weight_Range').innerHTML='<h1>Ideal => '+min+'-'+max+' (kg)</h1>';
+                         if(Weight>=min && Weight<=max)
+                        {
+                            return 'Healthy';
+                        }
+                        else if(Weight<min)
+                        {
+                            return 'Under Weight';
+                        }
+                        else if(Weight>max)
+                        {
+                            return 'Over Weight';
+                        }
+                    }
+
+                    
+                    if(Height>=5.10 && Height<5.11)
+                    {
+                        let min=61.2;
+                        let max=74.8;
+                        document.getElementById('Weight_Range').innerHTML='<h1>Ideal => '+min+'-'+max+' (kg)</h1>';
+                         if(Weight>=min && Weight<=max)
+                        {
+                            return 'Healthy';
+                        }
+                        else if(Weight<min)
+                        {
+                            return 'Under Weight';
+                        }
+                        else if(Weight>max)
+                        {
+                            return 'Over Weight';
+                        }
+                    }
+
+                    
+                    if(Height>=5.11 && Height<6.0)
+                    {
+                        let min=63.5;
+                        let max=77.5;
+                        document.getElementById('Weight_Range').innerHTML='<h1>Ideal => '+min+'-'+max+' (kg)</h1>';
+                         if(Weight>=min && Weight<=max)
+                        {
+                            return 'Healthy';
+                        }
+                        else if(Weight<min)
+                        {
+                            return 'Under Weight';
+                        }
+                        else if(Weight>max)
+                        {
+                            return 'Over Weight';
+                        }
+                    }
+
+                    
+                    if(Height>=6.0 && Height<6.1)
+                    {
+                        let min=65.3;
+                        let max=79.8;
+                        document.getElementById('Weight_Range').innerHTML='<h1>Ideal => '+min+'-'+max+' (kg)</h1>';
+                         if(Weight>=min && Weight<=max)
+                        {
+                            return 'Healthy';
+                        }
+                        else if(Weight<min)
+                        {
+                            return 'Under Weight';
+                        }
+                        else if(Weight>max)
+                        {
+                            return 'Over Weight';
+                        }
+                    }
+
+                    
+                    if(Height>=6.1 && Height<6.2)
+                    {
+                        let min=67.6;
+                        let max=82.5;
+                        document.getElementById('Weight_Range').innerHTML='<h1>Ideal => '+min+'-'+max+' (kg)</h1>';
+                         if(Weight>=min && Weight<=max)
+                        {
+                            return 'Healthy';
+                        }
+                        else if(Weight<min)
+                        {
+                            return 'Under Weight';
+                        }
+                        else if(Weight>max)
+                        {
+                            return 'Over Weight';
+                        }
+                    }
+
+                    
+                    if(Height>=6.2 && Height<6.3)
+                    {
+                        let min=69.4;
+                        let max=84.8;
+                        document.getElementById('Weight_Range').innerHTML='<h1>Ideal => '+min+'-'+max+' (kg)</h1>';
+                         if(Weight>=min && Weight<=max)
+                        {
+                            return 'Healthy';
+                        }
+                        else if(Weight<min)
+                        {
+                            return 'Under Weight';
+                        }
+                        else if(Weight>max)
+                        {
+                            return 'Over Weight';
+                        }
+                    }
+
+                    
+                    if(Height>=6.3 && Height<6.4)
+                    {
+                        let min=71.6;
+                        let max=87.5;
+                        document.getElementById('Weight_Range').innerHTML='<h1>Ideal => '+min+'-'+max+' (kg)</h1>';
+                         if(Weight>=min && Weight<=max)
+                        {
+                            return 'Healthy';
+                        }
+                        else if(Weight<min)
+                        {
+                            return 'Under Weight';
+                        }
+                        else if(Weight>max)
+                        {
+                            return 'Over Weight';
+                        }
+                    }
+
+                    
+                    if(Height>=6.4 && Height<6.5)
+                    {
+                        let min=73.5;
+                        let max=89.8;
+                        document.getElementById('Weight_Range').innerHTML='<h1>Ideal => '+min+'-'+max+' (kg)</h1>';
+                         if(Weight>=min && Weight<=max)
+                        {
+                            return 'Healthy';
+                        }
+                        else if(Weight<min)
+                        {
+                            return 'Under Weight';
+                        }
+                        else if(Weight>max)
+                        {
+                            return 'Over Weight';
+                        }
+                    }
+
+                    
+                    if(Height>=6.5 && Height<6.6)
+                    {
+                        let min=75.7;
+                        let max=92.5;
+                        document.getElementById('Weight_Range').innerHTML='<h1>Ideal => '+min+'-'+max+' (kg)</h1>';
+                         if(Weight>=min && Weight<=max)
+                        {
+                            return 'Healthy';
+                        }
+                        else if(Weight<min)
+                        {
+                            return 'Under Weight';
+                        }
+                        else if(Weight>max)
+                        {
+                            return 'Over Weight';
+                        }
+                    }
+
+                    
+                    if(Height>=6.6 && Height<6.7)
+                    {
+                        let min=77.5;
+                        let max=94.8;
+                        document.getElementById('Weight_Range').innerHTML='<h1>Ideal => '+min+'-'+max+' (kg)</h1>';
+                         if(Weight>=min && Weight<=max)
+                        {
+                            return 'Healthy';
+                        }
+                        else if(Weight<min)
+                        {
+                            return 'Under Weight';
+                        }
+                        else if(Weight>max)
+                        {
+                            return 'Over Weight';
+                        }
+                    }
+
+                    
+                    if(Height>=6.7 && Height<6.8)
+                    {
+                        let min=79.8;
+                        let max=97.5;
+                        document.getElementById('Weight_Range').innerHTML='<h1>Ideal => '+min+'-'+max+' (kg)</h1>';
+                         if(Weight>=min && Weight<=max)
+                        {
+                            return 'Healthy';
+                        }
+                        else if(Weight<min)
+                        {
+                            return 'Under Weight';
+                        }
+                        else if(Weight>max)
+                        {
+                            return 'Over Weight';
+                        }
+                    }
+
+                    
+                    if(Height>=6.8 && Height<6.9)
+                    {
+                        let min=81.6;
+                        let max=99.8;
+                        document.getElementById('Weight_Range').innerHTML='<h1>Ideal => '+min+'-'+max+' (kg)</h1>';
+                         if(Weight>=min && Weight<=max)
+                        {
+                            return 'Healthy';
+                        }
+                        else if(Weight<min)
+                        {
+                            return 'Under Weight';
+                        }
+                        else if(Weight>max)
+                        {
+                            return 'Over Weight';
+                        }
+                    }
+
+                    
+                    if(Height>=6.9 && Height<6.10)
+                    {
+                        let min=83.9;
+                        let max=102.5;
+                        document.getElementById('Weight_Range').innerHTML='<h1>Ideal => '+min+'-'+max+' (kg)</h1>';
+                         if(Weight>=min && Weight<=max)
+                        {
+                            return 'Healthy';
+                        }
+                        else if(Weight<min)
+                        {
+                            return 'Under Weight';
+                        }
+                        else if(Weight>max)
+                        {
+                            return 'Over Weight';
+                        }
+                    }
+
+                    
+                    if(Height>=6.10 && Height<6.11)
+                    {
+                        let min=85.7;
+                        let max=104.8;
+                        document.getElementById('Weight_Range').innerHTML='<h1>Ideal => '+min+'-'+max+' (kg)</h1>';
+                         if(Weight>=min && Weight<=max)
+                        {
+                            return 'Healthy';
+                        }
+                        else if(Weight<min)
+                        {
+                            return 'Under Weight';
+                        }
+                        else if(Weight>max)
+                        {
+                            return 'Over Weight';
+                        }
+                    }
+
+                    
+                    if(Height>=6.11 && Height<7.0)
+                    {
+                        let min=88;
+                        let max=107.5;
+                        document.getElementById('Weight_Range').innerHTML='<h1>Ideal => '+min+'-'+max+' (kg)</h1>';
+                         if(Weight>=min && Weight<=max)
+                        {
+                            return 'Healthy';
+                        }
+                        else if(Weight<min)
+                        {
+                            return 'Under Weight';
+                        }
+                        else if(Weight>max)
+                        {
+                            return 'Over Weight';
+                        }
+                    }
+
+                    
+                    if(Height>=7.0 && Height<7.1)
+                    {
+                        let min=89.8;
+                        let max=109.7;
+                        document.getElementById('Weight_Range').innerHTML='<h1>Ideal => '+min+'-'+max+' (kg)</h1>';
+                         if(Weight>=min && Weight<=max)
+                        {
+                            return 'Healthy';
+                        }
+                        else if(Weight<min)
+                        {
+                            return 'Under Weight';
+                        }
+                        else if(Weight>max)
+                        {
+                            return 'Over Weight';
+                        }
+                    }
+
+
+                }
+
+           
+           }
+
+
+           else if(Height>7.0)
+           {   
+                                
+                                if(BMI>=18.5 && BMI<=24.9)
+                                {
+                                    document.getElementById('Weight_Range').innerHTML="<h2>You is Absolutely Fit and Fine</h2>";
+                                    return 'Healthy';
+                                
+                                }
+                                else if(BMI<18.5)
+                                {
+                                 
+                                let diff=18.5-BMI;
+                                let gain_weight=diff*Height*0.305*Height*0.305;
+                                gain_weight=parseFloat(gain_weight).toFixed(1);
+                                document.getElementById('Weight_Range').innerHTML="<h2>You Need To Gain "+gain_weight+" (kg)</h2>"; 
+                                
+                                    return 'Under Weight';
+                                }
+                                else if(BMI>24.9)
+                                {
+                                    
+                                let diff=BMI-24.9;
+                                let Lose_weight=diff*Height*0.305*Height*0.305;
+                                Lose_weight=parseFloat(Lose_weight).toFixed(1);
+                                document.getElementById('Weight_Range').innerHTML="<h2>You Need To Lose "+Lose_weight+" (kg)</h2>"; 
+                                
+                                    return 'Over Weight';
+                                }
+
+                        
+           }
+           
+           
+           else
+           {
+               return 'Healthy';
+           }
+
+        }
+
+
+        function show()
+       {
+          
+          document.getElementById('name').innerHTML="<h1>Created By Harsh </h1>";  
+       } 
+
+
+       function TextRemove()
+       {
+          
+          document.getElementById('name').innerHTML="";  
+       } 
+
+
+    </script>
+</body>
+</html>
